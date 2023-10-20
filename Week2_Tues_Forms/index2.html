@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="car">Choose Car</label>
+      <input
+        minlength="3"
+        maxlength="10"
+        list="car-list"
+        type="text"
+        name="car"
+        id="car"
+      />
+      <input type="hidden" type="" />
+      <button name="submit">Submit</button>
+
+      <datalist id="car-list">
+        <option>Audi</option>
+        <option>BMW</option>
+        <option>VW</option>
+        <option>Range Rover</option>
+        <option>Alfa Romeo</option>
+        <option>Alfa Ewan</option>
+      </datalist>
+    </form>
+  </body>
+</html>

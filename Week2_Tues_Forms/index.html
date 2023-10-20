@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Bank Details</legend>
+      <label for="sort">Sort Code</label>
+      <input type="sort" name="sort" id="sort" />
+      <label for="account">Account</label>
+      <input type="account number" name="account number" id="account number" />
+    </fieldset>
+
+    <textarea name="" id="" cols="30" rows="10">Text here</textarea>
+
+    <form action="" method="get">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="John Smith" />
+
+      <label for="name">Location</label>
+      <input id="name" type="text" name="location" placeholder="London" />
+
+      <button type="submit">Send Form</button>
+
+      <input type="radio" name="status" value="adult" id="adult" />
+      <input type="radio" name="status" value="child" id="child" checked="" />
+
+      <input type="checkbox" name="drink1" value="drink1" />
+      <input type="checkbox" name="drink2" value="drink2" checked />
+      <input type="checkbox" name="drink3" value="drink3" />
+
+      <select name="food" id="food" multiple>
+        <optgroup label="Food">
+          <option value="burger">Burger</option>
+          <option value="chips">Chips</option>
+          <option value="salad">Salad</option>
+        </optgroup>
+
+        <optgroup label="Drinks">
+          <option value="coke">Code</option>
+          <option value="beer">Beer</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

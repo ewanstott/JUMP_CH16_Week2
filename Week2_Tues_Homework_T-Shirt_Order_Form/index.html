@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt Order Form</title>
+
+    <style>
+      form label,
+      form select,
+      form input,
+      form textarea,
+      form button {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <h1>T-Shirt Order Form</h1>
+  <body>
+    <h4><b>Please input your order details below: </b></h4>
+
+    <form
+      action="https://form-reader.netlify.app/.netlify/functions/formReader"
+      method="post"
+    >
+      <!-- <form action="" method="get"> -->
+      <div>
+        <label for="title-select"><b>Select Your Title: </b></label>
+        <select name="title" id="">
+          <option value="1">Mrs</option>
+          <option value="2">Miss</option>
+          <option value="3">Mr</option>
+        </select>
+      </div>
+      <div>
+        <label for="name"><b>Full Name: </b></label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Joe Briggs..."
+          required
+        />
+      </div>
+      <div>
+        <label for="email"><b>Email: </b></label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="abc@123.com..."
+          required
+        />
+      </div>
+      <div>
+        <label for="address"><b>Address: </b></label>
+        <textarea name="address" id="" cols="30" rows="10" required>
+Address here...</textarea
+        >
+      </div>
+
+      <div>
+        <label for="size-select"><b>Select Your Size: </b></label>
+        <select name="size" id="" required>
+          <option value="0">please select</option>
+          <option value="1">xs</option>
+          <option value="2">s</option>
+          <option value="3">m</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gender"
+          ><b>Which most closely describes your gender?</b></label
+        >
+      </div>
+      <div>
+        <label for="female">Women</label>
+        <input type="radio" name="gender" value="women" id="women" />
+        <label for="female">Man</label>
+        <input type="radio" name="gender" value="man" id="man" />
+        <label for="female">Transgender</label>
+        <input
+          type="radio"
+          name="gender"
+          value="transgender"
+          id="transgender"
+        />
+        <label for="female">Non-Binary</label>
+        <input type="radio" name="gender" value="non-binary" id="non-binary" />
+        <label for="female">Gender not listed</label>
+        <input
+          type="radio"
+          name="gender"
+          value="gender not listed"
+          id="gender not listed"
+        />
+      </div>
+
+      <div>
+        <label for="patterns"><b>Choose Patterns: </b></label>
+        <select name="patterns" id="">
+          <optgroup label="patterns">
+            <option value="back print">Back Print</option>
+            <option value="front print">Front Print</option>
+            <option value="details">Details</option>
+          </optgroup>
+        </select>
+      </div>
+      <button type="submit">Submit Order</button>
+    </form>
+  </body>
+</html>
